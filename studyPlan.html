@@ -1,0 +1,674 @@
+<!DOCTYPE html><html>学习路线<head>
+      <title>&#x65E0;&#x7EBF;&#x4E8C;&#x7EC4;&#x5B66;&#x4E60;&#x8BA1;&#x5212;</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Administrator\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.4.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+
+      
+      
+      
+      
+      
+      
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header undefined" id="%E6%97%A0%E7%BA%BF%E4%BA%8C%E7%BB%84%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92">&#x65E0;&#x7EBF;&#x4E8C;&#x7EC4;&#x5B66;&#x4E60;&#x8BA1;&#x5212;</h1>
+
+<ul>
+<li><a href="#1-%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80">1. &#x524D;&#x7AEF;&#x57FA;&#x7840;</a></li>
+<li><a href="#2-%E5%90%8E%E5%8F%B0%E5%9F%BA%E7%A1%80">2. &#x540E;&#x53F0;&#x57FA;&#x7840;</a></li>
+<li><a href="#3-%E9%A1%B9%E7%9B%AE%E7%BB%84">3. &#x9879;&#x76EE;&#x7EC4;</a></li>
+<li><a href="#4-android">4. android</a></li>
+<li><a href="#5-c">5. c++</a></li>
+<li><a href="#6-%E6%AF%94%E8%B5%9B">6. &#x6BD4;&#x8D5B;</a></li>
+</ul>
+<h2 class="mume-header" id="1-%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80">1. &#x524D;&#x7AEF;&#x57FA;&#x7840;</h2>
+
+<p><strong>&#x89C6;&#x9891;&#x5B66;&#x4E60;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5B66;&#x4E60;&#x76EE;&#x6807;</th>
+<th style="text-align:center">&#x63A8;&#x8350;&#x89C6;&#x9891;</th>
+<th style="text-align:center">&#x7F51;&#x5740;</th>
+<th style="text-align:center">&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">HTML+CSS</td>
+<td style="text-align:center">2019&#x6743;&#x5A01;&#x300C;HTML+CSS&#x300D;&#x96F6;&#x57FA;&#x7840;&#x5165;&#x95E8;&#x7CBE;&#x82F1;&#x8BFE;&#x3010;&#x6E21;&#x4E00;&#x6559;&#x80B2;&#x3011;</td>
+<td style="text-align:center"><a href="https://ke.qq.com/course/231570?taid=2955805083273362">https://ke.qq.com/course/231570?taid=2955805083273362</a></td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">js</td>
+<td style="text-align:center">Web&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x4E4B;JavaScript(Js)&#x7CBE;&#x82F1;&#x8BFE;&#x5802;&#x3010;&#x6E21;&#x4E00;&#x6559;&#x80B2;&#x3011;</td>
+<td style="text-align:center"><a href="https://ke.qq.com/course/231577?taid=2841395744442521">https://ke.qq.com/course/231577?taid=2841395744442521</a></td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">jQuery</td>
+<td style="text-align:center">4&#x5929;&#x4ECE;&#x96F6;&#x73A9;&#x8F6C;jQuery</td>
+<td style="text-align:center"><a href="https://www.bilibili.com/video/av40716170">https://www.bilibili.com/video/av40716170</a></td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">es6</td>
+<td style="text-align:center">javaScript&#x8FDB;&#x9636;&#x9762;&#x5411;&#x5BF9;&#x8C61;ES6</td>
+<td style="text-align:center"><a href="https://www.bilibili.com/video/av61592183?from=search&amp;seid=17350506504780439718">https://www.bilibili.com/video/av61592183?from=search&amp;seid=17350506504780439718</a></td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">ajax</td>
+<td style="text-align:center">&#x9ED1;&#x9A6C;&#x7A0B;&#x5E8F;&#x5458;Ajax&#x89C6;&#x9891;&#x6559;&#x7A0B;</td>
+<td style="text-align:center"><a href="https://www.bilibili.com/video/av8048720">https://www.bilibili.com/video/av8048720</a></td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">vue</td>
+<td style="text-align:center">vue&#x6559;&#x7A0B;-&#x9ED1;&#x9A6C;</td>
+<td style="text-align:center"><a href="https://www.bilibili.com/video/av50680998?from=search&amp;seid=7089263701331867629">https://www.bilibili.com/video/av50680998?from=search&amp;seid=7089263701331867629</a></td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;</td>
+<td style="text-align:center">&#x817E;&#x8BAF;&#x5B98;&#x65B9;&#x6587;&#x6863;</td>
+<td style="text-align:center"><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/">https://developers.weixin.qq.com/miniprogram/dev/framework/</a></td>
+<td style="text-align:center">-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x4E66;&#x7C4D;&#x5B66;&#x4E60;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5B66;&#x4E60;&#x76EE;&#x6807;</th>
+<th style="text-align:center">&#x63A8;&#x8350;&#x4E66;&#x76EE;</th>
+<th style="text-align:center">&#x63A8;&#x8350;&#x7F51;&#x5740;</th>
+<th style="text-align:center">&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">html&#x5B66;&#x4E60;</td>
+<td style="text-align:center">&#x300A;Head First HTML and CSS 2nd Edition&#x300B;</td>
+<td style="text-align:center">w3 html&#x6559;&#x7A0B;</td>
+<td style="text-align:center">&#x5EFA;&#x8BAE;&#x641C;&#x7D22;&#x9ED1;&#x9A6C;&#x7A0B;&#x5E8F;&#x5458;&#xFF0C;&#x91CC;&#x9762;&#x6709;&#x5DE6;&#x8FB9;&#x6240;&#x6709;&#x524D;&#x7AEF;&#x6559;&#x7A0B;&#xFF0C;&#x5DE6;&#x8FB9;&#x63A8;&#x8350;&#x7F51;&#x5740;&#x94FE;&#x63A5;&#x4EC5;&#x4F9B;&#x53C2;&#x8003;&#xFF0C;&#x65B9;&#x4FBF;&#x5FEB;&#x901F;&#x5165;&#x95E8;</td>
+</tr>
+<tr>
+<td style="text-align:center">css&#x5B66;&#x4E60;</td>
+<td style="text-align:center">w3</td>
+<td style="text-align:center">css&#x6559;&#x7A0B;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">javascript&#x5B66;&#x4E60;</td>
+<td style="text-align:center">&#x300A;js&#x6743;&#x5A01;&#x6307;&#x5357;&#x300B;</td>
+<td style="text-align:center">w3 javascript&#x6559;&#x7A0B;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">es6&#x5B66;&#x4E60;</td>
+<td style="text-align:center">&#x300A;ES6 &#x6807;&#x51C6;&#x5165;&#x95E8;&#xFF08;&#x7B2C;3&#x7248;&#xFF09;&#x300B;</td>
+<td style="text-align:center">&#x962E;&#x4E00;&#x5CF0;es6&#x5B98;&#x7F51;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">vue.js&#x5B66;&#x4E60;</td>
+<td style="text-align:center">&#x300A;vue.js&#x6743;&#x5A01;&#x6307;&#x5357;&#x300B;</td>
+<td style="text-align:center">vue&#x5B98;&#x7F51;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x5B66;&#x4E60;</td>
+<td style="text-align:center">&#x65E0;</td>
+<td style="text-align:center">&#x5C0F;&#x7A0B;&#x5E8F;&#x5B98;&#x7F51;</td>
+<td style="text-align:center">&#x5EFA;&#x8BAE;&#x770B;&#x5B98;&#x65B9;&#x6587;&#x6863;</td>
+</tr>
+</tbody>
+</table>
+<h2 class="mume-header" id="2-%E5%90%8E%E5%8F%B0%E5%9F%BA%E7%A1%80">2. &#x540E;&#x53F0;&#x57FA;&#x7840;</h2>
+
+<p><strong>&#x89C6;&#x9891;&#x5B66;&#x4E60;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5B66;&#x4E60;&#x76EE;&#x6807;</th>
+<th style="text-align:center">&#x63A8;&#x8350;&#x89C6;&#x9891;</th>
+<th style="text-align:center">&#x7F51;&#x5740;</th>
+<th style="text-align:center">&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">java&#x57FA;&#x7840;</td>
+<td style="text-align:center">Java&#x96F6;&#x57FA;&#x7840;&#x5165;&#x95E8;&#x5230;&#x7CBE;&#x901A;&#xFF08;&#x96C6;&#x5408;&#xFF0C;&#x6CDB;&#x578B;&#xFF0C;IO&#xFF0C;&#x53CD;&#x5C04;&#xFF0C;JVM&#xFF0C; &#x6E90;&#x7801;&#xFF09;</td>
+<td style="text-align:center"><a href="https://ke.qq.com/course/375599?taid=2866267900197679">https://ke.qq.com/course/375599?taid=2866267900197679</a></td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">SSM&#x6846;&#x67B6;</td>
+<td style="text-align:center">SSM&#x6559;&#x7A0B;(Sping,SpingMVC,Mybatis)</td>
+<td style="text-align:center"><a href="https://www.bilibili.com/video/av29071483?from=search&amp;seid=1054086864563043892">https://www.bilibili.com/video/av29071483?from=search&amp;seid=1054086864563043892</a></td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">Mysql&#x6570;&#x636E;&#x5E93;</td>
+<td style="text-align:center">mySQL&#x6570;&#x636E;&#x5E93; &#x57FA;&#x7840;+&#x9AD8;&#x7EA7;&#x6848;&#x4F8B;&#xFF08;&#x5B8C;&#xFF09;</td>
+<td style="text-align:center"><a href="https://www.bilibili.com/video/av54336026?from=search&amp;seid=2053394078067784849">https://www.bilibili.com/video/av54336026?from=search&amp;seid=2053394078067784849</a></td>
+<td style="text-align:center">-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x4E66;&#x7C4D;&#x5B66;&#x4E60;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5B66;&#x4E60;&#x76EE;&#x6807;</th>
+<th style="text-align:center">&#x63A8;&#x8350;&#x4E66;&#x76EE;</th>
+<th style="text-align:center">&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">java&#x57FA;&#x7840;</td>
+<td style="text-align:center">&#x300A;&#x75AF;&#x72C2;java&#x8BB2;&#x4E49;&#x300B;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x6846;&#x67B6;</td>
+<td style="text-align:center">&#x300A;Spring&#x300B;,&#x300A;Spring MVC&#x5B66;&#x4E60;&#x6307;&#x5357;&#x300B;,&#x300A;Mybatis &#x4ECE;&#x5165;&#x95E8;&#x5230;&#x7CBE;&#x901A;&#x300B;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">Spring Boot</td>
+<td style="text-align:center">&#x300A;SpringBoot &#x5B9E;&#x6218;&#x300B;</td>
+<td style="text-align:center">&#x5728;Spring&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x4F7F;&#x7528;SpringBoot&#x7684;&#x81EA;&#x52A8;&#x914D;&#x7F6E;&#xFF0C;&#x66F4;&#x5FEB;&#x901F;&#x5730;&#x5F00;&#x53D1;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x6570;&#x636E;&#x5E93;</td>
+<td style="text-align:center">&#x300A;MySql &#x5FC5;&#x77E5;&#x5FC5;&#x4F1A;&#x300B;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">JVM</td>
+<td style="text-align:center">&#x300A;&#x6DF1;&#x5165;&#x4E86;&#x89E3;JVM&#x300B;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x6570;&#x636E;&#x7ED3;&#x6784;&#x6240;&#x4E0E;&#x7B97;&#x6CD5;</td>
+<td style="text-align:center">&#x300A;&#x5251;&#x6307;offer&#x300B;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x5E76;&#x53D1;</td>
+<td style="text-align:center">&#x300A;java&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x827A;&#x672F;&#x300B;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">javaweb</td>
+<td style="text-align:center">&#x300A;&#x6DF1;&#x5165;&#x5206;&#x6790;javaweb&#x6280;&#x672F;&#x5185;&#x5E55;&#x300B;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;</td>
+<td style="text-align:center">&#x300A;&#x56FE;&#x89E3;TCP/IP&#x300B;--&gt;&#x300A;TCP/IP&#x8BE6;&#x89E3;&#x300B;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;</td>
+<td style="text-align:center">&#x300A;&#x5927;&#x8BDD;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x300B;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">linux</td>
+<td style="text-align:center">&#x300A;linux&#x7CFB;&#x7EDF;&#x547D;&#x4EE4;&#x53CA;shell&#x811A;&#x672C;&#x5B9E;&#x6218;&#x6307;&#x5357;&#x300B;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;</td>
+<td style="text-align:center">&#x300A;&#x6DF1;&#x5165;&#x7406;&#x89E3;&#x8BA1;&#x7B97;&#x673A;&#x7CFB;&#x7EDF;&#x300B;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x975E;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;</td>
+<td style="text-align:center">&#x300A;redis&#x5F00;&#x53D1;&#x4E0E;&#x8FD0;&#x7EF4;&#x300B;</td>
+<td style="text-align:center">-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x5176;&#x4ED6;&#x4E66;&#x7C4D;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5B66;&#x4E60;&#x76EE;&#x6807;</th>
+<th style="text-align:center">&#x63A8;&#x8350;&#x4E66;&#x76EE;</th>
+<th style="text-align:center">&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">JVM</td>
+<td style="text-align:center">&#x300A;&#x6DF1;&#x5165;&#x7406;&#x89E3;Java&#x865A;&#x62DF;&#x673A;&#x300B;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x7F16;&#x7801;&#x89C4;&#x8303;</td>
+<td style="text-align:center">&#x300A;&#x7801;&#x51FA;&#x9AD8;&#x6548;&#xFF1A;Java&#x5F00;&#x53D1;&#x624B;&#x518C;&#x300B;</td>
+<td style="text-align:center">&#x597D;&#x7684;&#x7F16;&#x7A0B;&#x4E60;&#x60EF;&#x66F4;&#x6709;&#x5229;&#x4E8E;&#x4EE3;&#x7801;&#x7684;&#x7EF4;</td>
+</tr>
+<tr>
+<td style="text-align:center">HTTP &#x77E5;&#x8BC6;</td>
+<td style="text-align:center">&#x300A;HTTP&#x6743;&#x5A01;&#x6307;&#x5357;&#x300B;</td>
+<td style="text-align:center">&#x5BF9;HTTP&#x534F;&#x8BAE;&#x6DF1;&#x5165;&#x7406;&#x89E3;</td>
+</tr>
+<tr>
+<td style="text-align:center">InnoDB</td>
+<td style="text-align:center">&#x300A;MySQL&#x6280;&#x672F;&#x5185;&#x5E55;&#x300B;</td>
+<td style="text-align:center">&#x4E5F;&#x662F;&#x4E00;&#x672C;&#x7ECF;&#x5178;&#x7684;&#x6570;&#x636E;&#x5E93;&#x7684;&#x5F15;&#x64CE;&#x8BB2;&#x89E3;&#x4E66;&#x7C4D;&#xFF0C;&#x5DF2;&#x7ECF;&#x8BB2;&#x5230;&#x4E86;&#x7B2C;&#x4E8C;&#x7248;&#x4E86;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x4E2D;&#x95F4;&#x4EF6;</td>
+<td style="text-align:center">&#x300A;Apache Kafka&#x5B9E;&#x6218;&#x300B;</td>
+<td style="text-align:center">&#x81F3;&#x5C11;&#x638C;&#x63E1;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x4EF6;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x5FAE;&#x670D;&#x52A1;</td>
+<td style="text-align:center">&#x300A;&#x91CD;&#x65B0;&#x5B9A;&#x4E49;Spring Cloud&#x300B;</td>
+<td style="text-align:center">&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x5165;&#x95E8;</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x5206;&#x5E03;&#x5F0F;&#x5165;&#x95E8;</td>
+<td style="text-align:center">&#x300A;&#x5927;&#x578B;&#x5206;&#x5E03;&#x5F0F;&#x7F51;&#x7AD9;&#x67B6;&#x6784;&#x300B;</td>
+<td style="text-align:center">&#x7F51;&#x7AD9;&#x89C4;&#x6A21;&#x7684;&#x6269;&#x5F20;&#xFF0C;&#x80AF;&#x5B9A;&#x8981;&#x5B66;&#x4E60;&#x5206;&#x5E03;&#x5F0F;&#x7F51;&#x7AD9;&#x7684;&#x77E5;&#x8BC6;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 class="mume-header" id="3-%E9%A1%B9%E7%9B%AE%E7%BB%84">3. &#x9879;&#x76EE;&#x7EC4;</h2>
+
+<ol>
+<li>
+<p>&#x5206;&#x4EAB;&#x81EA;&#x5DF1;&#x64C5;&#x957F;&#x9886;&#x57DF;&#x9879;&#x76EE;( &#x5148;&#x7EDF;&#x8BA1;&#x4F1A;&#x7684;&#x5185;&#x5BB9;)</p>
+</li>
+<li>
+<p>&#x7EC3;&#x4E60;&#x9879;&#x76EE;(&#x81EA;&#x5236;&#x5B66;&#x6821;&#x62DB;&#x8058;&#x4FE1;&#x606F;&#x7F51;)</p>
+</li>
+<li>
+<p>&#x63A5;&#x9879;&#x76EE;</p>
+</li>
+</ol>
+<h2 class="mume-header" id="4-android">4. android</h2>
+
+<p><strong>&#x89C6;&#x9891;&#x5B66;&#x4E60;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5B66;&#x4E60;&#x76EE;&#x6807;</th>
+<th style="text-align:center">&#x63A8;&#x8350;&#x89C6;&#x9891;</th>
+<th style="text-align:center">&#x7F51;&#x5740;</th>
+<th style="text-align:center">&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Android</td>
+<td style="text-align:center">Android&#x5F00;&#x53D1;&#x4ECE;&#x5165;&#x95E8;&#x5230;&#x7CBE;&#x901A;&#xFF08;&#x9879;&#x76EE;&#x6848;&#x4F8B;&#x7248;&#xFF09;</td>
+<td style="text-align:center"><a href="https://www.bilibili.com/video/av22836860?from=search&amp;seid=14060875615783319770">https://www.bilibili.com/video/av22836860?from=search&amp;seid=14060875615783319770</a></td>
+<td style="text-align:center">-</td>
+</tr>
+</tbody>
+</table>
+<h2 class="mume-header" id="5-c">5. c++</h2>
+
+<p><strong>&#x89C6;&#x9891;&#x5B66;&#x4E60;&#xFF1A;</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x5B66;&#x4E60;&#x76EE;&#x6807;</th>
+<th style="text-align:center">&#x63A8;&#x8350;&#x89C6;&#x9891;</th>
+<th style="text-align:center">&#x7F51;&#x5740;</th>
+<th style="text-align:center">&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">c++&#x57FA;&#x7840;</td>
+<td style="text-align:center">&#x9ED1;&#x9A6C;&#x7A0B;&#x5E8F;&#x5458; C++ &#x7CFB;&#x7EDF;&#x73ED; &#x4ECE;&#x5165;&#x95E8;&#x5230;&#x5165;&#x571F; (&#x6301;&#x7EED;&#x66F4;&#x65B0;)</td>
+<td style="text-align:center"><a href="https://www.bilibili.com/video/av37403127/?p=1340">https://www.bilibili.com/video/av37403127/?p=1340</a></td>
+<td style="text-align:center">-</td>
+</tr>
+</tbody>
+</table>
+<h2 class="mume-header" id="6-%E6%AF%94%E8%B5%9B">6. &#x6BD4;&#x8D5B;</h2>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x6BD4;&#x8D5B;&#x540D;&#x79F0;</th>
+<th style="text-align:center">&#x7F51;&#x5740;</th>
+<th style="text-align:center">&#x65F6;&#x95F4;</th>
+<th style="text-align:center">&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&#x963F;&#x91CC;&#x7684;&#x5929;&#x6C60;</td>
+<td style="text-align:center"><a href="https://tianchi.aliyun.com/home/">https://tianchi.aliyun.com/home/</a></td>
+<td style="text-align:center">&#x5E38;&#x5E74;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x817E;&#x8BAF;&#x7684;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x5927;&#x8D5B;</td>
+<td style="text-align:center"><a href="https://developers.weixin.qq.com/community/competition">https://developers.weixin.qq.com/community/competition</a></td>
+<td style="text-align:center">3&#x6708;&#x4EFD;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x8F6F;&#x4EF6;&#x7CBE;&#x82F1;&#x6311;&#x6218;&#x8D5B;</td>
+<td style="text-align:center">&#x534E;&#x4E3A;</td>
+<td style="text-align:center">3&#x6708;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x7F51;&#x7EDC;&#x6311;&#x6218;&#x8D5B;</td>
+<td style="text-align:center">&#x534E;&#x4E3A;</td>
+<td style="text-align:center">3&#x6708;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x9500;&#x552E;&#x7CBE;&#x82F1;&#x6311;&#x6218;&#x8D5B;</td>
+<td style="text-align:center">&#x534E;&#x4E3A;</td>
+<td style="text-align:center">3&#x6708;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x4F17;&#x661F;&#x6367;&#x6708;&#x8D22;&#x7ECF;&#x5927;&#x8D5B;&#x4E2D;&#x65EC;</td>
+<td style="text-align:center">&#x4E2D;&#x5174;</td>
+<td style="text-align:center">3&#x6708;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x6821;&#x56ED;&#x8425;&#x9500;&#x5927;&#x8D5B;</td>
+<td style="text-align:center">&#x5F3A;&#x751F;</td>
+<td style="text-align:center">3&#x6708;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x56FD;&#x9645;&#x6570;&#x5B57;&#x8425;&#x9500;&#x6BD4;&#x8D5B;</td>
+<td style="text-align:center">&#x4E0A;&#x6C7D;</td>
+<td style="text-align:center">8&#x6708;</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">BOE&#x4EAC;&#x4E1C;&#x65B9;&#x8425;&#x9500;&#x8D5B;</td>
+<td style="text-align:center">&#x4EAC;&#x4E1C;&#x65B9;</td>
+<td style="text-align:center">6&#x6708;</td>
+<td style="text-align:center">-</td>
+</tr>
+</tbody>
+</table>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
